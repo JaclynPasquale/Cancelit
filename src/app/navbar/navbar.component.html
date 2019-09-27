@@ -1,0 +1,38 @@
+
+    <mat-toolbar color="primary">
+
+        <div class="toolbar-tools">
+
+
+            <ng-container *ngIf="photoUrl$ | async">
+              <img class="user-avatar" [src]="photoUrl$ | async" >
+            </ng-container>
+
+
+            <ng-container>
+              <a *ngIf="user$"
+            [routerLink]="['/subscriptions']">
+                <mat-icon>library_books</mat-icon>
+                <span>Subscriptions</span>
+            </a>
+            </ng-container>
+
+          <ng-container>
+            <a routerLink="login" *ngIf="isLoggedOut$ | async">
+                <mat-icon>account_circle</mat-icon>
+                <span>Login</span>
+            </a>
+          </ng-container>
+
+          <ng-container>
+            <a (click)="logout()" *ngIf="isLoggedin$ | async">
+                <mat-icon>exit_to_app</mat-icon>
+                <span>Logout</span>
+            </a>
+          </ng-container>
+        </div>
+
+
+    </mat-toolbar>
+
+

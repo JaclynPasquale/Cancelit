@@ -1,0 +1,36 @@
+<!-- <mat-card>
+    <form fxLayout="column" fxLayoutAlign="center center" *ngIf="subscriptionForm" [formGroup]="subscriptionForm" (ngSubmit)="onSubmit()">
+      <mat-form-field>
+        <input matInput type="text" placeholder="Subscription Name" formControlName="name">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="url" placeholder="Website URL" formControlName="websiteUrl">
+      </mat-form-field>
+      <mat-form-field>
+          <input matInput type="url" placeholder="Cancel Subscription URL" formControlName="cancelUrl">
+        </mat-form-field>
+      <mat-form-field>
+          <input matInput [matDatepicker]="picker" placeholder="Subscription start date" formControlName="startDate">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput [matDatepicker]="pickerdos" placeholder="Subscription end date" formControlName="endDate">
+            <mat-datepicker-toggle matSuffix [for]="pickerdos"></mat-datepicker-toggle>
+            <mat-datepicker #pickerdos></mat-datepicker>
+          </mat-form-field>
+        <mat-form-field>
+            <input matInput type="number" placeholder="Length of trial period" formControlName="trialPeriod">
+        </mat-form-field>
+          <button mat-raised-button type="submit">
+            Save
+          </button>
+          <button mat-raised-button  [routerLink]="['/subscriptions/:id']" routerLinkActive="router-link-active">
+              Cancel
+          </button>
+
+    </form>
+
+    <button [routerLink]="['/subscriptions/:id']" routerLinkActive="router-link-active" > Subscription List </button>
+  </mat-card>
+   -->
